@@ -36,7 +36,10 @@ body{
   text-transform: uppercase;
   font-weight: 900;
 }
-
+.wrapper .header .header-menu .title a {
+  text-decoration: none;
+  color: white
+}
 .wrapper .header .header-menu .title span{
   color: #4CCEE1;
 }
@@ -206,11 +209,42 @@ body{
 .wrapper.collapse .main-container{
   width: calc(100% - 70px);
   margin-left: 70px;
+ 
 }
-
-.wrapper .main-container .card{
+.wrapper .main-container .card {
   background: #fff;
   padding: 15px;
   margin-bottom: 10px;
   font-size: 14px;
 }
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  margin-top: 1rem;
+  
+}
+.card-single {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  box-shadow: 0 5px 5px -2px #212121;
+  padding: 2rem;
+}
+.card-single a{
+  text-decoration: none;
+  color: #000;
+  
+}
+
+.card-single a h5 {
+  font-weight: 12px;
+  margin-top: 1rem;
+}
+
+
+
+
+
