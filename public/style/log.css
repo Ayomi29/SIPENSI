@@ -1,12 +1,12 @@
 
 body{
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/bg.jpg");
+    background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../images/bg.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-
+	margin-top: 60px;
 }
 
 #login-form
@@ -16,6 +16,7 @@ body{
 }
 .form-box
 {
+	
 	top: 50px;
     width:380px;
 	height:420px;
@@ -43,9 +44,8 @@ body{
     margin-bottom: 0;
 }
 .form-box img.logo {
-	left: 35%;
 	position: relative;
-    transform: translate(-50%, 0%);
+	left: 100px;
     max-width: 200px
 	
 	
@@ -100,4 +100,14 @@ span
 	font-size:12px;
 	
 	position:relative;
+}
+@media screen and (max-width: 991.98px) {
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .form-box {
+		width: 90%;
+	}
 }

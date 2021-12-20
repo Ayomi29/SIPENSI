@@ -28,7 +28,7 @@
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow-sm" style="background-color: #15477a">
 		<div class="container">
 			<img src="images/logo2.png" />
-			<a class="navbar-brand" href="home.php">SIPENSI</a>
+			<a class="navbar-brand" href="/home">SIPENSI</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -47,7 +47,7 @@
 						<a class="nav-link" href="#sidangakhir">Sidang Akhir</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link tbl-login" href="login.php">Login</a>
+						<a class="nav-link tbl-login" href="/login">Login</a>
 					</li>
 				</ul>
 			</div>
@@ -59,73 +59,17 @@
 		<section id="home">
 			<div class="tengah">
 				<div class="kolom">
+					<img src="images/Lambang_ITK.png" />
 					<h2>Sistem Informasi Pendaftaran ITK</h2>
 					<p class="deskripsi">Selamat Datang di SIPENSI ITK</p>
 				</div>
 			</div>
 		</section>
 
-		<!--Halaman dosenpembimbing-->
-		<section id="dosenpembimbing">
-			<div class="tengah">
-				<div class="kolom">
-					<h2>Dosen Pembimbing</h2>
-					<p>
-						Penentuan dosen pembimbing dan bidang minat penelitian. Dalam
-						fitur terdapat upload berkas dan pemberitahuan.
-					</p>
-					<p><a href="#" class="tbl-dosenpembimbing">Visit Us</a></p>
-				</div>
-			</div>
-		</section>
-
-		<!---Halaman sempro-->
-		<section id="sempro">
-			<div class="tengah">
-				<div class="kolom">
-					<h2 class="deksripsi">Seminar Proposal</h2>
-					<p>
-						Fitur ini menyediakan fitur pendaftaran sempro, bukti tanda
-						terima, pemberitahuan, upload draft proposal, dan formulir
-						evaluasi
-					</p>
-					<p><a href="#" class="tbl-sempro">Visit Us</a></p>
-				</div>
-			</div>
-		</section>
-
-		<!---Halaman Bimbingan-->
-		<section id="bimbingan">
-			<div class="tengah">
-				<div class="kolom">
-					<h2 class="deksripsi">Bimbingan</h2>
-					<p>
-						Fitur ini menyediakan format formulir lembar bimbingan dan portal
-						untuk persetujuan sidang akhir.
-					</p>
-					<p><a href="#" class="tbl-bimbingan">Visit Us</a></p>
-				</div>
-			</div>
-		</section>
-
-		<!---Halaman sidangakhir-->
-		<section id="sidangakhir">
-			<div class="tengah">
-				<div class="kolom">
-					<h2 class="deksripsi">Sidang Akhir</h2>
-					<p>
-						Fitur ini menyediakan fitur pendaftaran sidang akhir, jadwal
-						sidang akhir, bukti tanda terima, upload draft laporan skripsi dan
-						penilaian.
-					</p>
-					<p><a href="#" class="tbl-sidangakhir">Visit Us</a></p>
-				</div>
-			</div>
-		</section>
-
+		
 		<!---Halaman Contact-->
 		<section id="contact">
-			<div class="wrapper">
+			<div class="wrap">
 				<div class="footer">
 					<div class="footer-section">
 						<img src="images/logo2.png" />
