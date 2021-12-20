@@ -22,7 +22,7 @@
 			<!--header menu start-->
 			<div class="header">
 				<div class="header-menu">
-					<div class="title"><a href="dashboard.html">SIPENSI <span>ITK</span></a> </div>
+					<div class="title"><a href="/">SIPENSI <span>ITK</span></a> </div>
 					<div class="sidebar-btn">
 						<i class="fas fa-bars"></i>
 					</div>
@@ -38,7 +38,7 @@
 			<div class="sidebar">
 				<div class="sidebar-menu">
 					<li class="item">
-						<a href="dashboard.html" class="menu-btn">
+						<a href="/" class="menu-btn">
 							<i class="fas fa-desktop"></i><span>Dashboard</span>
 						</a>
 					</li>
@@ -47,13 +47,13 @@
 							<i class="fas fa-users"></i><span>Seminar Proposal <i class="fas fa-chevron-down drop-down"></i></span>
 						</a>
 						<div class="sub-menu">
-							<a href="seminar proposal/dosping.html">
+							<a href="/dosping">
 								<i class="fas fa-user-circle"></i><span>Dosen Pembimbing & BMP</span>
 							</a>
-							<a href="#">
+							<a href="/pendaftaran-seminar">
 								<i class="fas fa-address-card"></i><span>Pendaftaran Seminar Proposal</span>
 							</a>
-							<a href="seminar proposal/seminar.html">
+							<a href="/seminar">
 								<i class="fas fa-users"></i><span>Seminar Proposal</span>
 							</a>
 						</div>
@@ -63,19 +63,19 @@
 							<i class="fas fa-book-reader"></i><span>Sidang Akhir <i class="fas fa-chevron-down drop-down"></i></span>
 						</a>
 						<div class="sub-menu">
-							<a href="sidang akhir/dosenpenguji.html">
+							<a href="/dosenpenguji">
 								<i class="fas fa-user-circle"></i><span>Dosen Penguji</span>
 							</a>
-							<a href="#">
+							<a href="/pendaftaran-sidang">
 								<i class="fas fa-address-card"></i><span>Pendaftaran Sidang Akhir</span>
 							</a>
-							<a href="sidang akhir/sidang.html">
+							<a href="/sidang">
 								<i class="fas fa-chalkboard-teacher"></i><span>Sidang Akhir</span>
 							</a>
 						</div>
 					</li>
 					<li class="item">
-						<a href="about.html" class="menu-btn">
+						<a href="/about" class="menu-btn">
 							<i class="fas fa-info-circle"></i><span>About</span>
 						</a>
 					</li>
