@@ -17,7 +17,7 @@
 		<div class="card-single">
 			<a href="about">
 				<i class="fas fa-info-circle fa-2x"></i>
-				<h5 class="card-title">About</h5>
+				<h5 class="card-title">About Us</h5>
 			</a>
 		</div>
 	</div>

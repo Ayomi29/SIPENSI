@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RouteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,42 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard');
-});
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
-Route::get('/home', function () {
-    return view('home');
-});
-Route::get('/about', function () {
-    return view('about');
-});
-Route::get('/login', function () {
-    return view('login');
-});
-Route::get('/sempro', function () {
-    return view('sempro');
-});
-Route::get('/sidangakhir', function () {
-    return view('sidangakhir');
-});
-Route::get('/dosping', function () {
-    return view('dosping');
-});
-Route::get('/pendaftaran-seminar', function () {
-    return view('pendaftaran-seminar');
-});
-Route::get('seminar', function () {
-    return view('seminar');
-});
-Route::get('dosenpenguji', function () {
-    return view('dosenpenguji');
-});
-Route::get('/pendaftaran-sidang', function () {
-    return view('pendaftaran-sidang');
-});
-Route::get('sidang', function () {
-    return view('sidang');
-});
+Route::get('/', [RouteController::class, 'dashboard']);
+Route::get('/dashboard', [RouteController::class, 'dashboard']);
+Route::get('/home', [RouteController::class, 'home']);
+Route::get('/about', [RouteController::class, 'about']);
+Route::get('/login', [RouteController::class, 'login']);
+Route::get('/sempro', [RouteController::class, 'sempro']);
+Route::get('/sidangakhir', [RouteController::class, 'sidangakhir']);
+Route::get('/dosping', [RouteController::class, 'dosenpembimbing']);
+Route::get('/pendaftaran-seminar', [RouteController::class, 'pendaftaran_seminar']);
+Route::get('seminar', [RouteController::class, 'seminar']);
+Route::get('dosenpenguji', [RouteController::class, 'dosenpenguji']);
+Route::get('/pendaftaran-sidang', [RouteController::class, 'pendaftaran_sidang']);
+Route::get('sidang', [RouteController::class, 'sidang']);

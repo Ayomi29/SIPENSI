@@ -4,17 +4,11 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8" />
-		<title>SIPENSI ITK</title>
+		<title> {{ $title }} </title>
 		<link rel="stylesheet" href="style/dashboard.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
-		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"/>
 
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-			charset="utf-8"
-		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 		
 	<body>
 		<!--wrapper start-->
@@ -76,7 +70,7 @@
 					</li>
 					<li class="item">
 						<a href="/about" class="menu-btn">
-							<i class="fas fa-info-circle"></i><span>About</span>
+							<i class="fas fa-info-circle"></i><span>About Us</span>
 						</a>
 					</li>
 				</div>
