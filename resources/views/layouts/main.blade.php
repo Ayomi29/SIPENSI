@@ -15,7 +15,7 @@
 			<!--header menu start-->
 			<div class="header">
 				<div class="header-menu">
-					<div class="title"><a href="/">SIPENSI <span>ITK</span></a> </div>
+					<div class="title"><a href="/dashboard">SIPENSI <span>ITK</span></a> </div>
 					<div class="sidebar-btn">
 						<i class="fas fa-bars"></i>
 					</div>
@@ -42,7 +42,7 @@
 			<div class="sidebar">
 				<div class="sidebar-menu">
 					<li class="item">
-						<a href="/" class="menu-btn">
+						<a href="/dashboard" class="menu-btn">
 							<i class="fas fa-desktop"></i><span>Dashboard</span>
 						</a>
 					</li>

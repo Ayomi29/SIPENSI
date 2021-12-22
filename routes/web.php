@@ -16,35 +16,33 @@ use App\Http\Controllers\RouteController;
 |
 */
 
-Route::get('/', [RouteController::class, 'dashboard']);
+Route::get('/', [RouteController::class, 'home']);
 
-Route::get('/dashboard', [RouteController::class, 'dashboard']);
+Route::get('/dashboard', [RouteController::class, 'dashboard'])->middleware('auth');
 
-Route::get('/home', [RouteController::class, 'home']);
+Route::get('/about', [RouteController::class, 'about'])->middleware('auth');
 
-Route::get('/about', [RouteController::class, 'about']);
-
-Route::get('/login', [LoginController::class, 'login'])->middleware('guest');
+Route::get('/login', [LoginController::class, 'login'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 
 Route::post('/logout', [LoginController::class, 'logout']);
 
-Route::get('/register', [RegisterController::class, 'register']);
+Route::get('/register', [RegisterController::class, 'register'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('/sempro', [RouteController::class, 'sempro']);
+Route::get('/sempro', [RouteController::class, 'sempro'])->middleware('auth');
 
 
-Route::get('/sidangakhir', [RouteController::class, 'sidangakhir']);
+Route::get('/sidangakhir', [RouteController::class, 'sidangakhir'])->middleware('auth');
 
-Route::get('/dosping', [RouteController::class, 'dosenpembimbing']);
+Route::get('/dosping', [RouteController::class, 'dosenpembimbing'])->middleware('auth');
 
-Route::get('/pendaftaran-seminar', [RouteController::class, 'pendaftaran_seminar']);
+Route::get('/pendaftaran-seminar', [RouteController::class, 'pendaftaran_seminar'])->middleware('auth');
 
-Route::get('seminar', [RouteController::class, 'seminar']);
+Route::get('seminar', [RouteController::class, 'seminar'])->middleware('auth');
 
-Route::get('dosenpenguji', [RouteController::class, 'dosenpenguji']);
+Route::get('dosenpenguji', [RouteController::class, 'dosenpenguji'])->middleware('auth');
 
-Route::get('/pendaftaran-sidang', [RouteController::class, 'pendaftaran_sidang']);
+Route::get('/pendaftaran-sidang', [RouteController::class, 'pendaftaran_sidang'])->middleware('auth');
 
-Route::get('sidang', [RouteController::class, 'sidang']);
+Route::get('sidang', [RouteController::class, 'sidang'])->middleware('auth');
