@@ -77,10 +77,27 @@ body{
   transition: 0.3s;
   transition-property: background, color;
 }
-
-.wrapper .header .header-menu ul li a:hover{
-  background: #4CCEE8;
-  color: #fff;
+.wrapper .header .header-menu ul li a:hover {
+    background: #4CCEE8;
+    color: #fff;
+}
+.wrapper .header .header-menu ul li button {
+    background: #fff;
+    color: #000;
+    display: block;
+    margin: 0 10px;
+    font-size: 18px;
+    width: 34px;
+    height: 34px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    transition-property: background, color;
+}
+.wrapper .header .header-menu ul li button:hover {
+    background: #4CCEE8;
+    color: #fff;
 }
 
 .wrapper .sidebar{

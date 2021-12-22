@@ -27,12 +27,6 @@ class RouteController extends Controller
         ]);
     }
 
-    public function login()
-    {
-        return view('login', [
-            "title" => "SIPENSI ITK"
-        ]);
-    }
 
     public function sempro()
     {

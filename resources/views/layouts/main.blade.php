@@ -7,7 +7,6 @@
 		<title> {{ $title }} </title>
 		<link rel="stylesheet" href="style/dashboard.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"/>
-
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 		
 	<body>
@@ -21,9 +20,20 @@
 						<i class="fas fa-bars"></i>
 					</div>
 					<ul>
-						<li>
-							<a href="/login"><i class="fas fa-power-off"></i></a>
-						</li>
+						@auth
+							<li>
+								<form action="/logout" method="post">
+									@csrf
+									<button type="submit" class=""><i class="fas fa-sign-out-alt"></i></button>
+								</form>
+								
+							</li>
+							
+						@elseif ('guest')
+							<li>
+								<a href="/login"><i class="fas fa-sign-in-alt"></i></a>
+							</li>
+						@endauth
 					</ul>
 				</div>
 			</div>

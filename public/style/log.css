@@ -1,111 +1,46 @@
-
-body{
-    background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../images/bg.jpg");
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	margin-top: 60px;
+img {
+	max-width: 180px;
 }
 
-#login-form
-{
-    display: none;
-
-}
-.form-box
-{
-	
-	top: 50px;
-    width:380px;
-	height:420px;
-	position: solid;
-	margin:2% auto;
-	background: #eee !important;
-	padding: 10px;
-    overflow: hidden;
-	border-style: solid;
-	border-radius: 20px;
-	border-color: transparent;
-	box-shadow: 0 8px 8px -4px lightblue;
-}
-.form-box h2.title {
-	letter-spacing: .5px;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 0;
-}
-.form-box p{
-	
-	letter-spacing: .5px;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 0;
-}
-.form-box img.logo {
-	position: relative;
-	left: 100px;
-    max-width: 200px
+.form-signin {
+    margin-top: 60px;
+	border-radius: 10px;
 }
 
-#btn
-{
-	top: 0;
-	left:0;
-	position: absolute;
-	width: 110px;
-	height: 100%;
-	background: #F3C693;
-	border-radius: 30px;
-	transition: .5s;
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
 }
 
-.input-field
-{
-	width: 100%;
-	padding:10px 0;
-	margin:5px 0;
-	border-left:0;
-	border-top:0;
-	border-right:0;
-	border-bottom: 1px solid #999;
-	outline:none;
-	background: transparent;
-	position: relative;
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
-.submit-btn
-{
-	width: 85%;
-	padding: 10px 30px;
-	cursor: pointer;
-	display: block;
-	margin: auto;
-	background: #F3C693;
-	border: 0;
-	outline: none;
-	border-radius: 30px;
-}
-.check-box
-{
-	margin: 30px 10px 34px 0;
-}
-span
-{
-	font-family: 'Poppins', sans-serif;
-	font-weight: 300;
-	color: black;
-	font-size:12px;
-	
-	position:relative;
-}
-@media screen and (max-width: 991.98px) {
 
-    .mobile-menu {
-        display: block;
-    }
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.form-registration {
+    margin-top: 60px;
+    border-radius: 10px;
+}
 
-    .form-box {
-		width: 90%;
-	}
+
+.form-registration .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-registration input{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-registration input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
