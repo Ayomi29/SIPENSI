@@ -51,7 +51,7 @@
 							<i class="fas fa-users"></i><span>Seminar Proposal <i class="fas fa-chevron-down drop-down"></i></span>
 						</a>
 						<div class="sub-menu">
-							<a href="/dosping">
+							<a href="/dosenpembimbing">
 								<i class="fas fa-user-circle"></i><span>Dosen Pembimbing & BMP</span>
 							</a>
 							<a href="/pendaftaran-seminar">

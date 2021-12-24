@@ -42,19 +42,7 @@ class RouteController extends Controller
         ]);
     }
 
-    public function dosenpembimbing()
-    {
-        return view('dosping', [
-            "title" => "Dosen Pembimbing"
-        ]);
-    }
 
-    public function pendaftaran_seminar()
-    {
-        return view('pendaftaran-seminar', [
-            "title" => "Pendaftaran Seminar Proposal"
-        ]);
-    }
 
     public function seminar()
     {
@@ -67,13 +55,6 @@ class RouteController extends Controller
     {
         return view('dosenpenguji', [
             "title" => "Dosen Penguji"
-        ]);
-    }
-
-    public function pendaftaran_sidang()
-    {
-        return view('pendaftaran-sidang', [
-            "title" => "Pendaftaran Sidang Akhir"
         ]);
     }
 

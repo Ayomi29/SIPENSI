@@ -1,9 +1,14 @@
 <?php
 
+use App\Http\Controllers\DosenPembimbingController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\RouteController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\PendaftaranSeminarController;
+use App\Http\Controllers\PendaftaranSidangController;
+use App\Models\DosenPembimbing;
+use App\Models\PendaftaranSidang;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,14 +40,17 @@ Route::get('/sempro', [RouteController::class, 'sempro'])->middleware('auth');
 
 Route::get('/sidangakhir', [RouteController::class, 'sidangakhir'])->middleware('auth');
 
-Route::get('/dosping', [RouteController::class, 'dosenpembimbing'])->middleware('auth');
+Route::get('/dosenpembimbing', [DosenPembimbingController::class, 'dosenpembimbing'])->middleware('auth');
+Route::post('/dosenpembimbing', [DosenPembimbingController::class, 'store']);
 
-Route::get('/pendaftaran-seminar', [RouteController::class, 'pendaftaran_seminar'])->middleware('auth');
+Route::get('/pendaftaran-seminar', [PendaftaranSeminarController::class, 'pendaftaran_seminar'])->middleware('auth');
+Route::post('/pendaftaran-seminar', [PendaftaranSeminarController::class, 'store']);
 
 Route::get('seminar', [RouteController::class, 'seminar'])->middleware('auth');
 
 Route::get('dosenpenguji', [RouteController::class, 'dosenpenguji'])->middleware('auth');
 
-Route::get('/pendaftaran-sidang', [RouteController::class, 'pendaftaran_sidang'])->middleware('auth');
+Route::get('/pendaftaran-sidang', [PendaftaranSidangController::class, 'pendaftaran_sidang'])->middleware('auth');
+Route::post('/pendaftaran-sidang', [PendaftaranSidangController::class, 'store']);
 
 Route::get('sidang', [RouteController::class, 'sidang'])->middleware('auth');

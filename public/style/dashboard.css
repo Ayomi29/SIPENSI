@@ -204,6 +204,28 @@ body{
   transition: 0.3s;
 }
 
+.wrapper .main-container .form-data {
+  display: block;
+  position: relative;
+  margin-top: 0px;
+  margin-left: -30px;
+  margin-bottom: 20px;
+}
+.wrapper .main-container .form-data select {
+  width: 500px;
+}
+.wrapper .main-container .form-data .text {
+  width: 500px;
+}
+.wrapper .main-container .form-data small {
+  display: block;
+  margin-top: 5px;
+}
+.wrapper .main-container .form-data .button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .wrapper.collapse .sidebar{
   width: 70px;
 }
