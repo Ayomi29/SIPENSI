@@ -6,6 +6,7 @@ namespace Database\Seeders;
 use App\Models\User;
 use App\Models\DosenPembimbing;
 use Illuminate\Database\Seeder;
+use App\Models\DataDosenPembimbing;
 
 class DatabaseSeeder extends Seeder
 {
@@ -45,6 +46,6 @@ class DatabaseSeeder extends Seeder
             'role' => 'mahasiswa',
             'password' => bcrypt('12345')
         ]);
-        DosenPembimbing::factory(10)->create();
+        DataDosenPembimbing::factory(10)->create();
     }
 }

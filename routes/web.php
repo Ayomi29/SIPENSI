@@ -40,8 +40,15 @@ Route::get('/sempro', [RouteController::class, 'sempro'])->middleware('auth');
 
 Route::get('/sidangakhir', [RouteController::class, 'sidangakhir'])->middleware('auth');
 
-Route::get('/dosenpembimbing', [DosenPembimbingController::class, 'dosenpembimbing'])->middleware('auth');
+/* Route::get('/dosenpembimbing', [DosenPembimbingController::class, 'dosenpembimbing'])->middleware('auth');
+Route::get('/dosenpembimbing/create', [DosenPembimbingController::class, 'create']);
+Route::get('/dosenpembimbing/edit', [DosenPembimbingController::class, 'edit']);
 Route::post('/dosenpembimbing', [DosenPembimbingController::class, 'store']);
+Route::post('/dosenpembimbing', [DosenPembimbingController::class, 'store_data']);
+Route::post('/dosenpembimbing/edit', [DosenPembimbingController::class, 'update']);
+Route::post('/dosenpembimbing', [DosenPembimbingController::class, 'destroy']); */
+Route::resource('/dosenpembimbing', DosenPembimbingController::class);
+
 
 Route::get('/pendaftaran-seminar', [PendaftaranSeminarController::class, 'pendaftaran_seminar'])->middleware('auth');
 Route::post('/pendaftaran-seminar', [PendaftaranSeminarController::class, 'store']);

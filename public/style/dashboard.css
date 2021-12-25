@@ -282,6 +282,18 @@ body{
   font-weight: 12px;
   margin-top: 1rem;
 }
+.form-data .btn-plus {
+  color: white;
+  background-color: #15477a;
+  border-radius: 15px;
+  padding: 0px 20px 0px 20px;
+  text-decoration: none;
+}
+
+.form-data .btn-plus:hover {
+  color: #000;
+  background-color: orange;
+}
 
 
 

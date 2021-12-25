@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDosenPembimbingsTable extends Migration
+class CreateDataDosenPembimbingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateDosenPembimbingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('dosen_pembimbings', function (Blueprint $table) {
+        Schema::create('data_dosen_pembimbings', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->unique();
+            $table->string('nip_niph')->unique();
             $table->string('jurusan');
             $table->string('prodi');
-            $table->string('dosen_pembimbing');
-            $table->string('file')->nullable();
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateDosenPembimbingsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('dosen_pembimbings');
+        Schema::dropIfExists('data_dosen_pembimbings');
     }
 }
