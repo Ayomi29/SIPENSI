@@ -46,6 +46,6 @@ class DatabaseSeeder extends Seeder
             'role' => 'mahasiswa',
             'password' => bcrypt('12345')
         ]);
-        DataDosenPembimbing::factory(10)->create();
+        /* DataDosenPembimbing::factory(10)->create(); */
     }
 }
